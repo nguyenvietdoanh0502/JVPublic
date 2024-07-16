@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Howl's Moving Castle</title>
+    <link rel="icon" href="img/PinClipart.com_totoro-clip-art_2444198.png">
+</head>
+<style>
+    .Background{
+        background-image: url(img/HMCBackground.png);
+        background-repeat: no-repeat;
+        width: 1366px;
+        height: 768px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+    }
+    #nav1{
+        position: relative;
+        left: 10px;
+        width: 60%;
+        left: 60px;
+        height: 0;
+        border-right: 120px solid transparent;
+        border-top: 650px solid #996666;
+        opacity: 0.5;
+        filter: drop-shadow(-30px 10px 100px #000);
+    }
+    #nav2{
+        position: relative;
+        right: 60px;
+        width: 60%;
+        height: 0;
+        border-left: 120px solid transparent;
+        border-bottom: 650px solid #a58567;
+        opacity: 0.5;
+        filter: drop-shadow(30px 10px 100px #000);
+    }
+    #img1{
+        position: absolute;
+        top: -90px; 
+        left: 350px;
+        width: 800px;
+        z-index: 4;
+    }
+   .Text{
+        color: black;
+        position: absolute;
+        z-index: 3;
+        display: flex;
+        font-size: 24px;
+        top: 90px;
+        left: 130px;
+   }
+   @keyframes slide{
+        from{
+            left: 1000px;
+            opacity: 0;
+        }
+        to{
+            left: 1090px;
+            opacity: 1;
+        }
+   }
+   #Year{
+        color: black;
+        position: absolute;
+        z-index: 3;
+        font-size: 35px;
+        left: 130px;
+        top: 150px;
+   }
+   .Name{
+        color: black;
+        position: absolute;
+        z-index: 3;
+        font-size: 110px;
+        left: 130px;
+        letter-spacing: 10px;
+   }
+   .Name:hover{
+        z-index: 5;
+   }
+   #Main{
+        top: 200px;
+   }
+   #Sp{
+        top: 310px;
+   }
+   #Sp2{
+          top: 425px
+   }
+   #Button{
+        background-color: whitesmoke;
+        width: 250px;
+        height: 55px;
+        position: absolute;
+        z-index: 3;
+        align-content: center;
+        font-size: 30px;
+        left: 130px;
+        top: 550px;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 20px rgb(173, 173, 173);
+   }
+   .rectangle{
+        position: absolute;
+        z-index: 4;
+        left: 140px;
+        top: 560px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 18px 0 18px 36px;
+        border-color: transparent transparent transparent rgb(0, 0, 0);
+   }
+   #Button:hover{
+        box-shadow: 0px 0px 40px rgb(173, 173, 173);
+
+   }
+   @keyframes grow{
+        from{
+            left: 130px;
+        }
+        to{
+            left: 330px;
+        }
+   }
+   .information{
+        position: absolute;
+        z-index: 3;
+        color: black;
+        opacity: 0.6;
+        top: 360px;
+        left: 970px;
+        text-align: right;
+        display: block;
+        font-size: 24px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }    
+   br{
+    height: 10px;
+   }
+   #rectangle2{
+        position: relative;
+        width: 0;
+        height: 0;
+        top: 5px;
+        left: -15px;
+        border-right: 20px solid black;
+        border-top: 10px solid black;
+        border-bottom: 10px solid black;
+        border-left: 20px solid black;
+        border-color: transparent black transparent transparent;
+   }
+   .square{
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        z-index: 4;
+        background-color: whitesmoke;
+        align-items: center;
+        top: 650px;
+        left: 100px
+   }
+   .square2{
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        z-index: 4;
+        background-color: whitesmoke;
+        align-items: center;
+        top: 650px;
+        left: 1235px;
+   }
+   #rectangle3{
+        position: relative;
+        width: 0;
+        height: 0;
+        top: 5px;
+        right: -6px;
+        border-right: 20px solid black;
+        border-top: 10px solid black;
+        border-bottom: 10px solid black;
+        border-left: 20px solid black;
+        border-color: transparent transparent transparent black;
+   }
+</style>
+<body>
+    <div class="Image"><img src="img/HMCCharacter.png" id="img1"></div>
+    <div class="Background">
+        <div id="nav1"></div>
+        <div id="nav2"></div>
+    </div>
+    <div class="Text">
+        <div style="text-decoration: underline;"><a href="https://www.imdb.com/list/ls051573141/" target="_blank" style="color: black;">Movie list</a></div>
+        <div style="margin-left: 20px;"><a href="https://en.wikipedia.org/wiki/Studio_Ghibli" target="_blank" style="color: black; text-decoration: none;">About Ghibli Studio</a></div>
+    </div>
+    <div id="Year">2004</div>
+    <div class="Name" id="Main">Howl's</div>
+    <div class="Name" id="Sp">Moving</div>
+    <div class="Name" id="Sp2">Castle</div>
+    <div class="information">
+        <div >Sophie, a young hatter,</div>
+        
+        <div >is turned into</div>
+        
+        <div >an old woman by a witch</div>
+        
+        <div >She then works for a wizard,</div>
+        
+        <div >Howl, in his moving castle</div>
+        
+        <div >Together, they try to break</div>
+
+        <div >the curse and end the war</div>
+    </div>
+    <a href="WOTH.html" >
+        <div class="square"><div id="rectangle2"></div></div>
+        <div class="Text" style="top: 650px; left: 140px; ">Whisper of the Heart</div>
+    </a>
+    <a href="SA.html">
+         <div class="square2"><div id="rectangle3"></div></div>
+         <div class="Text" style="top:650px ; left: 1090px; opacity: 1; animation: slide ease-in 1ms;">Spirited Away</div>
+    </a>
+    <a href="https://www.youtube.com/watch?v=DJeUGpcle8s" target="_blank"><div class="rectangle"></div><div id="Button"><div style="position: relative; left:60px ; color: black;">Watch Trailer</div></div></a>
+</body>
+</html>
